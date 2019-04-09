@@ -6,11 +6,13 @@
 2. `babel-loader`，`@babel/core`，`@babel/preset-env`，`@babel/preset-react`
 3. 设置`.babelrc`，`{"presets": ["@babel/preset-env","@babel/preset-react"]}`
 4. 设置`scripts`：
-    ```
+   
+     ```
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
     ```
 5. 设置`webpack-dev-server`：   
+    
     ```
     devServer: {
       compress: true,
