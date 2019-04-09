@@ -29,3 +29,53 @@
       hints: false
     }
     ```
+
+## `Component` ##
+
+1. 基本组件
+
+    ```
+    let title = <h1>Hello, world!</h1>
+    
+    ReactDOM.render(title,document.getElementById('root'))
+    ```
+
+2. 动态组件
+
+    ```
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    
+    let displayTime = () => {
+      let nowTime = (
+        <div>
+          <span>现在时间：{new Date().toLocaleTimeString()}</span>
+        </div>
+      );
+      ReactDOM.render(t
+        nowTime,
+        document.getElementById('root')
+      );
+    };
+    
+    setInterval(displayTime, 1000);
+    ```
+
+3. `class`组件构建器
+
+    ```
+    import React, {Component} from 'react';
+    import ReactDOM from 'react-dom';
+    
+    class HelloTitle extends Component {
+      render() {
+        return <h1>Hello,World!</h1>
+      }
+    }
+    
+    ReactDOM.render(
+      <HelloTitle/>,
+      document.getElementById('root')
+    );
+    ```
+

@@ -1,15 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-let element = <div>
-  <h1>Hello, React!</h1>
-  <p>webpack-dev-server刷新速度太慢</p>
-  <input type="text" value="nameasdasd"/>
-  <input type="submit" value="Click"/>
-</div>;
+class HelloTitle extends Component {
+  render() {
+    return <h1>Hello,World!</h1>
+  }
+}
 
 ReactDOM.render(
-  element,
+  <HelloTitle/>,
   document.getElementById('root')
 );
-
