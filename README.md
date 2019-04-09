@@ -17,6 +17,5 @@
     compress: true,
     port: 9000
   },   
-
   "start": "webpack-dev-server --config webpack.config.js" 
     ```
