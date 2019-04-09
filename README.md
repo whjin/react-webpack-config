@@ -10,12 +10,12 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
     ```
-5. 设置`webpack-dev-server`：
-   
+5. 设置`webpack-dev-server`：   
     ```
-  devServer: {
-    compress: true,
-    port: 9000
-  },   
-  "start": "webpack-dev-server --config webpack.config.js" 
+    devServer: {
+      compress: true,
+        port: 9000
+    },
+
+    "start": "webpack-dev-server --config webpack.config.js" 
     ```
