@@ -4,11 +4,12 @@ module.exports = {
   entry: "./index.js",
   output: {
     filename: "bundle.js",
-    path: path.resolve('./build')
+    path: path.resolve('./build'),
+    publicPath: "/build"
   },
   devServer: {
-    compress: true,
-    port: 9000
+    port: 9000,
+    hot: true
   },
   module: {
     rules: [
@@ -38,5 +39,8 @@ module.exports = {
         }
       }
     ]
+  },
+  performance: {
+    hints: "dev" ? false : "warning"
   }
 };

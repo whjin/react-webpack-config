@@ -16,8 +16,16 @@
     ```
     devServer: {
       compress: true,
-        port: 9000
+        port: 9000，
+        hot: true
     },
 
     "start": "webpack-dev-server --config webpack.config.js" 
+    ```
+6. 设置`performance`：
+
+    ```
+    performance: {
+      hints: false
+    }
     ```

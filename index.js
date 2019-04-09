@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//建立一个DOM物件
-let element = <h1>Hello, world!</h1>
+let element = <div>
+  <h1>Hello, React!</h1>
+  <p>webpack-dev-server刷新速度太慢</p>
+  <input type="text" value="nameasdasd"/>
+  <input type="submit" value="Click"/>
+</div>;
 
-//使用ReactDOM.render把刚建立的物件element插入目标DOM中
 ReactDOM.render(
   element,
   document.getElementById('root')
